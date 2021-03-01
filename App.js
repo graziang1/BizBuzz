@@ -10,7 +10,7 @@ export default function App() {
         color="orange"
         title="Find Resources" 
         onPress={() =>
-          alert.alert("Welcome to BizBuzz","What are your looking for?", [
+          Alert.alert("Welcome to BizBuzz","What are your looking for?", [
             {text: "Find Links", onPress: () => console.log("Business Links")},
             {text: "Contact info", onPress: () => console.log("business@gmail.com")},
           ])
@@ -20,7 +20,7 @@ export default function App() {
         color="blue"
         title="Connect With Us" 
         onPress={() =>
-          alert.alert("Welcome to BizBuzz","What are your looking for?", [
+          Alert.alert("Welcome to BizBuzz","What are your looking for?", [
             {text: "Find Links", onPress: () => console.log("Business Links")},
             {text: "Contact info", onPress: () => console.log("business@gmail.com")},
           ])
