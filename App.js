@@ -1,13 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, Button, Alert } from 'react-native';
+import { StyleSheet, Text, View, Image, SafeAreaView, Button, Alert, ImageBackground } from 'react-native';
 
-export default function App() {
+const image = { uri: "./assets/school.png" };
+
+const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Hello Business Students!</Text>
+      <ImageBackground source={image} style={styles.image}>
+      <Text style={styles.text}>Hello Business Students!</Text>
       <Button 
-        color="orange"
+        color="#de5d07"
         title="Find Resources" 
         onPress={() =>
           Alert.alert("Welcome to BizBuzz","What are your looking for?", [
@@ -26,18 +29,30 @@ export default function App() {
           ])
         }
       />
-{/*      
-        <image source={require("./assets/icon.png")}/> 
-<StatusBar style="auto" /> */}
+      </ImageBackground>
     </SafeAreaView>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    flexDirection: "column",
     alignItems: 'center',
     justifyContent: 'center',
   },
+  image: {
+    flex: 1,
+    resizeMode: "cover",
+    justifyContent: "center"
+  },
+  text: {
+    color: "white",
+    fontSize: 42,
+    fontWeight: "bold",
+    textAlign: "center",
+    backgroundColor: "#000000a0"
+  }
 });
+
+export default App;
