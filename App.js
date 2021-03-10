@@ -5,7 +5,7 @@ import { StyleSheet, Text, View, Image, SafeAreaView, Button, Alert, ImageBackgr
 
 const image = { uri: "./assets/school.png" };
 
-const App = () => {
+const App = (props) => {
   return (
     <SafeAreaView style={styles.container}>
       <ImageBackground source={image} style={styles.image}>
@@ -13,12 +13,12 @@ const App = () => {
       <Button 
         color="#de5d07"
         title="Find Resources" 
-        onPress={() => this.props.navigation.navigate("./Views/Resources.js")}  
+        onPress={() => this.props.navigation.navigate('/Views/Resources.js')}  
       />
       <Button 
         color="blue"
         title="Connect With Us" 
-        onPress={() => this.props.navigation.navigate("./Views/Connect.js")}  
+        onPress={() => this.props.navigation.navigate('/Views/Connect.js')}  
       />
       </ImageBackground>
     </SafeAreaView>
