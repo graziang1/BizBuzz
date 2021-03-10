@@ -3,8 +3,11 @@ A cross-platform mobile application for the Business School at SUNY New Paltz.
 
 # Developer Guide
 ## Installation Steps:
-### Check to make sure you have NPM (Node Package Manager Installed)
+### Check to make sure you have npm (Node Package Manager) installed
 	npm -v
+	
+	If no version of npm is displayed, download and install Node.js and npm from here: https://nodejs.org/en/.
+	(Run npm -v to confirm it was installed correctly)
 
 ### Install the Expo CLI (command-line interface)
 	npm i -g expo-cli
@@ -20,6 +23,4 @@ A cross-platform mobile application for the Business School at SUNY New Paltz.
 	
 ### Install dependencies
 	npm i
-
-## Problems Faced:
-...
+	
