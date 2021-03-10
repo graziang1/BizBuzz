@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Image, SafeAreaView, Button, Alert, ImageBackground } from 'react-native';
 
+
 const image = { uri: "./assets/school.png" };
 
 const App = () => {
@@ -12,22 +13,12 @@ const App = () => {
       <Button 
         color="#de5d07"
         title="Find Resources" 
-        onPress={() =>
-          Alert.alert("Welcome to BizBuzz","What are your looking for?", [
-            {text: "Find Links", onPress: () => console.log("Business Links")},
-            {text: "Contact info", onPress: () => console.log("business@gmail.com")},
-          ])
-        }
+        onPress={() => this.props.navigation.navigate("./Views/Resources.js")}  
       />
       <Button 
         color="blue"
         title="Connect With Us" 
-        onPress={() =>
-          Alert.alert("Welcome to BizBuzz","What are your looking for?", [
-            {text: "Find Links", onPress: () => console.log("Business Links")},
-            {text: "Contact info", onPress: () => console.log("business@gmail.com")},
-          ])
-        }
+        onPress={() => this.props.navigation.navigate("./Views/Connect.js")}  
       />
       </ImageBackground>
     </SafeAreaView>
