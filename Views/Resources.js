@@ -1,4 +1,14 @@
-<View>
+import React from 'react';
+import {StyleSheet, Text, View } from 'react-native';
+import Info from '.components/Info';
+
+export default function App() {
+    return (
+
+<View style={StyleSheet.container}>
+
+    {/* Today's Tasks */}
+    <View style={StyleSheet.tasksWrapper}>
     <text>Resources</text>
     <text>Events Tab: </text> 
     <a href= "https://newpaltz.campuslabs.com/engage/events"></a>
@@ -13,6 +23,10 @@
     <text>Academic Resources: </text>
     <a href=  "www.newpaltz.edu/schoolofbusiness"></a>
 </View>
+</View>
+
+    )
+}
 
 {/*
     var SVGViewElement:{
