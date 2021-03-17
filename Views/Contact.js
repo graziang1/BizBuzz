@@ -30,6 +30,24 @@ export default function App() {
     );
 }
 
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
+    tasksWrapper: {
+        paddingTop: 80,
+        paddingHorizontal: 20,
+    },
+    sectionTitle: {
+        fontsize: 24,
+        fontWeight: 'bold'
+    },
+    items: {
+        marginTop: 30,
+    }
+})
+
 {/*
 <View>
     <text>Contact Us</text>
