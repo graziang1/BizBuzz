@@ -1,11 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View, SafeAreaView, Button, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Button, ImageBackground, Image } from 'react-native';
 
 
 const App = () => {
   return (
     <View style={styles.container}>
-      <Image source={require('./assets/school.png')} />;
+      <Image source={require('./assets/school.png')} />
       <Text style={styles.text}>Hello Business Students!</Text>
       <Button 
         color="#de5d07"
