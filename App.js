@@ -1,27 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View, Image, SafeAreaView, Button, Alert, ImageBackground } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView, Button, ImageBackground } from 'react-native';
 
 
-const image = { uri: "./assets/school.png" };
-
-const App = (props) => {
+const App = () => {
   return (
-    <SafeAreaView style={styles.container}>
-      <ImageBackground source={image} style={styles.image}>
+    <View style={styles.container}>
+      <Image source={require('./assets/school.png')} />;
       <Text style={styles.text}>Hello Business Students!</Text>
       <Button 
         color="#de5d07"
         title="Find Resources" 
-        onPress={() => this.props.navigation.navigate('/Views/Resources.js')}  
+        onPress={() => this.props.navigation.navigate('./Views/Resources.js')}  
       />
       <Button 
         color="blue"
         title="Connect With Us" 
-        onPress={() => this.props.navigation.navigate('/Views/Connect.js')}  
+        onPress={() => this.props.navigation.navigate('./Views/Connect.js')}  
       />
-      </ImageBackground>
-    </SafeAreaView>
+    </View>
   );
 };
 
