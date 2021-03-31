@@ -1,23 +1,42 @@
-import React from 'react';
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View, SafeAreaView, Button, ImageBackground, Image } from 'react-native';
 
+const Stack = createStackNavigator();
 
-const App = ({navigation: {navigate}}) => {
+const MyStack = () => {
   return (
-    <View style={styles.container}>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{ title: 'Welcome' }}
+        />
+        <Stack.Screen name="Profile" component={ProfileScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
+
+const App = ({navigation}) => {
+  return (
+    <NavigationContainer style={styles.container}>
       <Image source={require('./assets/school.png')} />
       <Text style={styles.text}>Hello Business Students!</Text>
       <Button 
         color="#de5d07"
         title="Find Resources" 
-        onPress={() => this.props.navigation.navigate('./Views/Resources.js', )} 
+        onPress={() => navigation.navigate('./Views/Resources.js', {} )} 
       />
       <Button 
         color="blue"
         title="Connect With Us" 
-        onPress={() => navigate('./Views/Contact.js')}  
+        onPress={() => navigation.navigate('./Views/Contact.js', )}  
       />
-    </View>
+    </NavigationContainer>
   );
 };
 
