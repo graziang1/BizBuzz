@@ -26,17 +26,13 @@ const App = ({navigation}) => {
   return (
     <NavigationContainer style={styles.container}>
       <ImageBackground source={require('./assets/school.png')} style={styles.image}>
-      <Text style={styles.text}>Hello Business Students!</Text>
-      <Button 
-        color="#de5d07"
-        title="Find Resources" 
-        onPress={() => navigation.navigate('./Views/Resources.js', {} )} 
-      />
-      <Button 
-        color="blue"
-        title="Connect With Us" 
-        onPress={() => navigation.navigate('./Views/Contact.js', )}  
-      />
+      <Text style={styles.text}>BIZ    </Text>
+      <Text style={styles.text}>BUZZ</Text>
+      <View style={{ borderBottomColor: 'navy', borderBottomWidth: 1,}} />
+      <Button color="#de5d07" title="Find Resources" 
+        onPress={() => navigation.navigate('./Views/Resources.js', {} )} />
+      <Button color="navy" title="Connect With Us" 
+        onPress={() => navigation.navigate('./Views/Contact.js', )} />
       </ImageBackground>
     </NavigationContainer>
   );
@@ -55,11 +51,11 @@ const styles = StyleSheet.create({
     justifyContent: "center"
   },
   text: {
-    color: "white",
+    color: "navy",
     fontSize: 42,
     fontWeight: "bold",
     textAlign: "center",
-    backgroundColor: "#000000a0"
+    padding: 1
   }
 });
 
