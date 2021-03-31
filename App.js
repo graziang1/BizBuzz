@@ -21,10 +21,11 @@ const MyStack = () => {
   );
 };
 
+
 const App = ({navigation}) => {
   return (
     <NavigationContainer style={styles.container}>
-      <Image source={require('./assets/school.png')} />
+      <ImageBackground source={require('./assets/school.png')} style={styles.image}>
       <Text style={styles.text}>Hello Business Students!</Text>
       <Button 
         color="#de5d07"
@@ -36,6 +37,7 @@ const App = ({navigation}) => {
         title="Connect With Us" 
         onPress={() => navigation.navigate('./Views/Contact.js', )}  
       />
+      </ImageBackground>
     </NavigationContainer>
   );
 };
