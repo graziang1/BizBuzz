@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Button, ImageBackground, Image } from 'react-native';
 
 
-const App = () => {
+const App = ({navigation: {navigate}}) => {
   return (
     <View style={styles.container}>
       <Image source={require('./assets/school.png')} />
@@ -10,12 +10,12 @@ const App = () => {
       <Button 
         color="#de5d07"
         title="Find Resources" 
-        onPress={() => this.props.navigation.navigate('./Views/Resources.js')}  
+        onPress={() => this.props.navigation.navigate('./Views/Resources.js', )} 
       />
       <Button 
         color="blue"
         title="Connect With Us" 
-        onPress={() => this.props.navigation.navigate('./Views/Connect.js')}  
+        onPress={() => navigate('./Views/Contact.js')}  
       />
     </View>
   );
