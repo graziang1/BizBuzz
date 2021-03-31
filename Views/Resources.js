@@ -1,8 +1,12 @@
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet, Text, View } from 'react-native';
+import {withNavigation} from "react-navigation";
 import Info from '.components/Info';
 
-export default function App() {
+function App() {
     return (
 
         <View style={StyleSheet.container}>
@@ -50,6 +54,8 @@ const styles = StyleSheet.create({
         marginTop: 30,
     }
 })
+
+export default withNavigation;
 
 {/*
     <Info text={'Events Tab:'} /> 

@@ -1,3 +1,6 @@
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import React from 'react';
 import {StyleSheet, Text, View } from 'react-native';
 import {withNavigation} from "react-navigation";
@@ -49,7 +52,7 @@ const styles = StyleSheet.create({
     }
 })
 
-export default withNavigation
+export default withNavigation;
 
 {/*
 <View>
