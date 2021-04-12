@@ -19,13 +19,16 @@ function App() {
             <View style={styles.items}>
                 {/* Where info will be moved to */}
                 <Info text={'Facebook: '} /> 
-                <a href= "https://www.facebook.com/SUNYNewPaltzSoB"></a>
+                <a href= "https://www.facebook.com/SUNYNewPaltzSoB" name='FB'></a>
+
                 <Info text={'Instagram: '} />
-                <a href= "www.instagram/npbusiness"></a>
+                <a href= "www.instagram/npbusiness" name='IG'></a>
+
                 <Info text={'LinkedIn: '} />
-                <a href= "https://www.linkedin.com/company/12634419/admin/"></a>
+                <a href= "https://www.linkedin.com/company/12634419/admin/" name='LinkedIn'></a>
+
                 <Info text={'Class groups with CircleIn: '} />
-                <a href=  "https://app.circleinapp.com/"></a>
+                <a href=  "https://app.circleinapp.com/" name='CircleIn'></a>
             </View>
 
         </View>

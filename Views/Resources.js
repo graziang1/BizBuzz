@@ -18,17 +18,22 @@ function App() {
             <View style={styles.items}>
                 {/* Where info will be moved to */}
                 <Info text={'Events Tab: '} /> 
-                <a href= "https://newpaltz.campuslabs.com/engage/events"></a>
+                <a href= "https://newpaltz.campuslabs.com/engage/events" name='Events'></a>
+
                 <Info text={'Networking: '} />
-                <a href= "www.newpaltz.edu/careers/"></a>
+                <a href= "www.newpaltz.edu/careers/" name='Networking'></a>
+
                 <Info text={'Workshops: '} />
-                <a href= "www.newpaltz.edu/careers/"></a>
+                <a href= "www.newpaltz.edu/careers/" name='Workshops'></a>
+
                 <Info text={'Internship/Job Application: '} />
-                <a href=  "www.newpaltz.edu/careers/"></a>
+                <a href=  "www.newpaltz.edu/careers/" name='Internships'></a>
+
                 <Info text={'Club Announcements: '} />
-                <a href=  "https://newpaltz.campuslabs.com/engage/organizations"></a>
+                <a href=  "https://newpaltz.campuslabs.com/engage/organizations" name='Clubs'></a>
+
                 <Info text={'Academic Resources: '} />
-                <a href=  "www.newpaltz.edu/schoolofbusiness"></a>
+                <a href=  "www.newpaltz.edu/schoolofbusiness" name='Resources'></a>
             </View>
 
         </View>
