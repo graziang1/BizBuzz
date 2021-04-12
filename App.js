@@ -4,17 +4,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, View, SafeAreaView, Button, ImageBackground, Image } from 'react-native';
 
-const Stack = createStackNavigator();
-
 const MyStack = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen
-          name="Home"
-          component={HomeScreen}
-          options={{ title: 'Welcome' }}
-        />
+        <Stack.Screen name="Home" component={HomeScreen} options={{ title: 'Welcome' }} />
+        <Stack.Screen name="Contact" path='./Views/Contact.js' component={ContactScreen} options={{ title: 'Contact' }} />
+
+
         <Stack.Screen name="Profile" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
@@ -32,7 +29,7 @@ const App = ({navigation}) => {
       <Button color="#de5d07" title="Find Resources" 
         onPress={() => navigation.navigate('./Views/Resources.js', {} )} />
       <Button color="navy" title="Connect With Us" 
-        onPress={() => navigation.navigate('./Views/Contact.js', )} />
+        onPress={() => navigation.navigate('Contact', )} />
       </ImageBackground>
     </NavigationContainer>
   );
